@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body,
 * {
     margin: 0;
@@ -8,7 +8,7 @@ body,
 
 
 #box {
-    width: 400px;
+    width: 520px;
     height: auto;
     margin: 0 auto;
     background-color: bisque;
@@ -20,7 +20,7 @@ body,
 }
 
 #model {
-    width: 250px;
+    width: auto;
     height: 150px;
     background-color: aliceblue;
     border-radius: 20px;
@@ -63,12 +63,39 @@ input {
 
 
 #image-box{
-    width: 350px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     background-color: aliceblue;
     border-radius: 20px;
     margin: auto;
-    display: block;
     padding: 5px;
+    display: grid;
+    grid-template-columns: auto;
     display: none;
+    
 }
+
+#image-box img{
+    width: 80px; margin: 0 5px; 
+}
+
+#image-box button{
+    border: none;  padding: 5px 15px; border-radius: 20px;
+}
+#on-image-box{
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: auto;
+    padding: 5px;
+    display: grid;
+    display: none;
+
+}
+
+#on-image-box button{
+    border: none; padding: 5px 15px; border-radius: 20px;
+}
+
+
