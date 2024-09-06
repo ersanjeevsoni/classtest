@@ -1,9 +1,9 @@
-start=()=>{
+cpnst start=()=>{
   document.getElementById("model").style.display='block';
   document.getElementById('start_btn').style.display='none';
 }
 
-bulbNmbr=()=>{
+const bulbNmbr=()=>{
     const val=document.getElementById('number').value;
     document.getElementById("image-box").style.display='block';
   document.getElementById('model').style.display='none';
