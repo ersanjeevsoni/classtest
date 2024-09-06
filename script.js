@@ -18,6 +18,7 @@ bulbNmbr=()=>{
 
        divTag.append(img);
      
+       
        const btn=document.createElement("button");
        btn.style.backgroundColor='red';
        btn.style.border='none'
