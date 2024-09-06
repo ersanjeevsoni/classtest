@@ -1,9 +1,9 @@
-const handleStart = () => {
+function handleStart(){
   document.getElementById("model").style.display = 'block';
   document.getElementById('start_btn').style.display = 'none';
 }
 
-const handleOnOff = () => {
+function handleOnOff(){
   const val = document.getElementById('number').value;
   const parentTag = document.getElementById("image-box");
 
