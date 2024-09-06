@@ -1,4 +1,4 @@
-cpnst start=()=>{
+const start=()=>{
   document.getElementById("model").style.display='block';
   document.getElementById('start_btn').style.display='none';
 }
