@@ -10,14 +10,15 @@ const handleOnOff = () => {
   document.getElementById("image-box").style.display = 'block';
   document.getElementById('model').style.display = 'none';
 
-  //parentTag.innerHTML = ''; // Clear previous images and buttons
+
 
   for (let i = 0; i < val; i++) {
-    
+
     // Create image element
     const imgTag = document.createElement("img");
     imgTag.setAttribute('src', 'images/Light_Bulb_Off.png');
     imgTag.style.display = 'block';
+    // imgTag.style.marginBottom='20px';
     parentTag.appendChild(imgTag);
 
     // Create 'On' button
@@ -27,7 +28,7 @@ const handleOnOff = () => {
     onButton.onclick = () => {
       imgTag.setAttribute('src', 'images/Light_Bulb_On.png');
       onButton.style.display = 'none';
-      offButton.style.display = 'block';
+      offButton.style.display = 'flex';
     };
     parentTag.appendChild(onButton);
 
@@ -39,7 +40,7 @@ const handleOnOff = () => {
     offButton.onclick = () => {
       imgTag.setAttribute('src', 'images/Light_Bulb_Off.png');
       offButton.style.display = 'none';
-      onButton.style.display = 'block';
+      onButton.style.display = 'flex';
     };
     parentTag.appendChild(offButton);
   }
